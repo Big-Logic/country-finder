@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script defer src="scripts/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Get Detail of any country</title>
+  </head>
+  <body>
+    <section class="search">
+      <div class="search__wrapper">
+        <div class="search__wrapper--child">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search by name"
+            id="search__input"
+          />
+        </div>
+        <div class="search__wrapper--child">
+          <button class="search__btn">Find Country</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="countries__wrapper"></section>
+
+    <div class="details">
+      <div class="details__wrap">
+        <div class="deatils__ch details__flagwrap"></div>
+        <div class="details__child details__name-and-capital-wrap">
+          <div class="details_sub-child details-name">
+            <p class="content__description"></p>
+            <p class="content__name"></p>
+          </div>
+          <div class="details_sub-child details-capital">
+            <p class="content__description"></p>
+            <p class="content__name"></p>
+          </div>
+        </div>
+        <div class="details__child details__continents-and-capitals-wrap">
+          <div class="details_sub-child details-continent">
+            <p class="content__description"></p>
+            <p class="content__name"></p>
+          </div>
+          <div class="details_sub-child details-subregion">
+            <p class="content__description"></p>
+            <p class="content__name"></p>
+          </div>
+        </div>
+        <div class="deatils__ch details__readmore">
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="details_read"
+          ></a>
+        </div>
+        <div class="deatils__ch details__mapwrap" id="map"></div>
+        <div class="details__child details__currency-and-lang-wrap">
+          <div class="details_sub-child details-currency">
+            <p class="content__description"></p>
+            <p class="content__name"></p>
+          </div>
+          <div class="details_sub-child details-lang">
+            <p class="content__description"></p>
+            <p class="content__name"></p>
+          </div>
+        </div>
+        <div class="details__child details__timezone-wrap">
+          <div class="details_sub-child details-timezone">
+            <p class="content__description"></p>
+            <p class="content__name"></p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="details__map"></div> -->
+    </div>
+  </body>
+</html>
