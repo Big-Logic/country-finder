@@ -21,7 +21,7 @@ body {
 }
 
 .search {
-  height: 50vh;
+  height: 150px;
   background-image: url("../images/earth.jpg");
   background-position: center;
   /* background-image: linear-gradient(
